@@ -1074,6 +1074,147 @@ ul {
 }
 
 /* ============================================
+   HOME - HERO TEACHERS STRIP
+   ============================================ */
+.hero-teachers {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 22px 0;
+  z-index: 2;
+  animation: heroTitle 1s 0.8s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+.hero-teachers-title {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.hero-teachers-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.hero-teacher {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.hero-teacher:hover {
+  transform: translateY(-8px);
+}
+
+.hero-teacher-img {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgba(255, 255, 255, 0.25);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  background: linear-gradient(135deg, rgba(26, 115, 232, 0.3), rgba(255, 111, 0, 0.3));
+}
+
+.hero-teacher:hover .hero-teacher-img {
+  border-color: var(--secondary);
+  box-shadow: 0 0 20px rgba(255, 111, 0, 0.4), 0 0 40px rgba(255, 111, 0, 0.15);
+  transform: scale(1.1);
+}
+
+.hero-teacher-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.hero-teacher-initials {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #fff;
+  font-family: var(--font-heading);
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+}
+
+.hero-teacher-more .hero-teacher-initials {
+  background: linear-gradient(135deg, var(--secondary), #e65100);
+  font-size: 1rem;
+}
+
+.hero-teacher-name {
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: color var(--transition);
+}
+
+.hero-teacher:hover .hero-teacher-name {
+  color: var(--secondary);
+}
+
+.hero-teacher-subject {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .hero-teachers-row {
+    gap: 18px;
+  }
+  .hero-teacher-img {
+    width: 55px;
+    height: 55px;
+  }
+  .hero-teacher-name {
+    font-size: 0.7rem;
+  }
+  .hero-teacher-subject {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-teachers-row {
+    gap: 12px;
+  }
+  .hero-teacher-img {
+    width: 48px;
+    height: 48px;
+    border-width: 2px;
+  }
+  .hero-teacher:nth-child(n+6) {
+    display: none;
+  }
+  .hero-teacher.hero-teacher-more {
+    display: flex;
+  }
+}
+
+/* ============================================
    HOME - STATS COUNTER
    ============================================ */
 .stats {
