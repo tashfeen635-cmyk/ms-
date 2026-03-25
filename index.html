@@ -84,69 +84,233 @@
         </div>
       </div>
     </div>
+    
 
-    <!-- MEET OUR TEACHERS - inside hero bottom -->
-    <div class="hero-teachers">
-      <div class="container">
-        <h3 class="hero-teachers-title">Meet Our Teachers</h3>
-        <div class="hero-teachers-row">
-          <a href="teachers.html" class="hero-teacher">
-            <div class="hero-teacher-img">
-              <img src="images/teacher1.jpg" alt="Dr. Rajesh Verma" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-              <span class="hero-teacher-initials" style="display:none;">RV</span>
+
+  </section>
+    <!-- FACULTY -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Meet Our Teachers</h2>
+        <p>Our dedicated and experienced faculty members are the backbone of Modern School.</p>
+      </div>
+      <div class="events-filter teachers-filter reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="science">Science</button>
+        <button class="filter-btn" data-filter="math">Mathematics</button>
+        <button class="filter-btn" data-filter="languages">Languages</button>
+        <button class="filter-btn" data-filter="arts">Arts & Sports</button>
+      </div>
+      <div class="teachers-grid">
+        <!-- Science -->
+        <div class="teacher-card reveal" data-department="science">
+          <div class="teacher-img">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=250&fit=crop&crop=faces" alt="Dr. Rajesh Verma" style="width:100%;height:100%;object-fit:cover;">
+            <div class="teacher-bio">
+              <p>Ph.D. in Physics from IIT Delhi. 18 years of teaching experience. Specializes in making complex concepts simple and engaging.</p>
             </div>
-            <span class="hero-teacher-name">Dr. Rajesh Verma</span>
-            <span class="hero-teacher-subject">Physics</span>
-          </a>
-          <a href="teachers.html" class="hero-teacher">
-            <div class="hero-teacher-img">
-              <img src="images/teacher2.jpg" alt="Mrs. Sunita Gupta" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-              <span class="hero-teacher-initials" style="display:none;">SG</span>
+          </div>
+          <div class="teacher-info">
+            <h3>Dr. Rajesh Verma</h3>
+            <div class="subject">Head of Physics</div>
+            <div class="teacher-socials">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
             </div>
-            <span class="hero-teacher-name">Mrs. Sunita Gupta</span>
-            <span class="hero-teacher-subject">Chemistry</span>
-          </a>
-          <a href="teachers.html" class="hero-teacher">
-            <div class="hero-teacher-img">
-              <img src="images/teacher3.jpg" alt="Mr. Anil Mathur" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-              <span class="hero-teacher-initials" style="display:none;">AM</span>
+          </div>
+        </div>
+
+        <div class="teacher-card reveal" data-department="science">
+          <div class="teacher-img" style="background: linear-gradient(135deg, #e8f5e9, #a5d6a7);">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=250&fit=crop&crop=faces" alt="Mrs. Sunita Gupta" style="width:100%;height:100%;object-fit:cover;">
+            <div class="teacher-bio">
+              <p>M.Sc. in Chemistry with 12 years of experience. Known for innovative lab experiments and mentoring students for Olympiads.</p>
             </div>
-            <span class="hero-teacher-name">Mr. Anil Mathur</span>
-            <span class="hero-teacher-subject">Mathematics</span>
-          </a>
-          <a href="teachers.html" class="hero-teacher">
-            <div class="hero-teacher-img">
-              <img src="images/teacher4.jpg" alt="Ms. Anjali Desai" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-              <span class="hero-teacher-initials" style="display:none;">AD</span>
+          </div>
+          <div class="teacher-info">
+            <h3>Mrs. Sunita Gupta</h3>
+            <div class="subject">Chemistry</div>
+            <div class="teacher-socials">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
             </div>
-            <span class="hero-teacher-name">Ms. Anjali Desai</span>
-            <span class="hero-teacher-subject">English</span>
-          </a>
-          <a href="teachers.html" class="hero-teacher">
-            <div class="hero-teacher-img">
-              <img src="images/teacher5.jpg" alt="Ms. Priya Nair" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-              <span class="hero-teacher-initials" style="display:none;">PN</span>
+          </div>
+        </div>
+
+        <div class="teacher-card reveal" data-department="science">
+          <div class="teacher-img" style="background: linear-gradient(135deg, #e0f2f1, #80cbc4);">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=250&fit=crop&crop=faces" alt="Ms. Priya Nair" style="width:100%;height:100%;object-fit:cover;">
+            <div class="teacher-bio">
+              <p>M.Sc. in Biology with specialization in Biotechnology. 10 years of experience. Passionate about environmental education.</p>
             </div>
-            <span class="hero-teacher-name">Ms. Priya Nair</span>
-            <span class="hero-teacher-subject">Biology</span>
-          </a>
-          <a href="teachers.html" class="hero-teacher">
-            <div class="hero-teacher-img">
-              <img src="images/teacher6.jpg" alt="Mr. Vikram Singh" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-              <span class="hero-teacher-initials" style="display:none;">VS</span>
+          </div>
+          <div class="teacher-info">
+            <h3>Ms. Priya Nair</h3>
+            <div class="subject">Biology</div>
+            <div class="teacher-socials">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
             </div>
-            <span class="hero-teacher-name">Mr. Vikram Singh</span>
-            <span class="hero-teacher-subject">Sports</span>
-          </a>
-          <a href="teachers.html" class="hero-teacher hero-teacher-more">
-            <div class="hero-teacher-img">
-              <span class="hero-teacher-initials" style="display:flex;">
-                <i class="fas fa-arrow-right"></i>
-              </span>
+          </div>
+        </div>
+
+        <!-- Mathematics -->
+        <div class="teacher-card reveal" data-department="math">
+          <div class="teacher-img" style="background: linear-gradient(135deg, #fff3e0, #ffcc80);">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=250&fit=crop&crop=faces" alt="Mr. Anil Mathur" style="width:100%;height:100%;object-fit:cover;">
+            <div class="teacher-bio">
+              <p>M.Sc. in Mathematics from JNU. 20 years of experience. Multiple students have scored perfect marks in board exams under his guidance.</p>
             </div>
-            <span class="hero-teacher-name">View All</span>
-            <span class="hero-teacher-subject">150+ Faculty</span>
-          </a>
+          </div>
+          <div class="teacher-info">
+            <h3>Mr. Anil Mathur</h3>
+            <div class="subject">Head of Mathematics</div>
+            <div class="teacher-socials">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="teacher-card reveal" data-department="math">
+          <div class="teacher-img" style="background: linear-gradient(135deg, #e8eaf6, #9fa8da);">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=250&fit=crop&crop=faces" alt="Mrs. Kavita Reddy" style="width:100%;height:100%;object-fit:cover;">
+            <div class="teacher-bio">
+              <p>B.Ed., M.Sc. Statistics. 8 years of experience with a focus on applied mathematics and competitive exam preparation.</p>
+            </div>
+          </div>
+          <div class="teacher-info">
+            <h3>Mrs. Kavita Reddy</h3>
+            <div class="subject">Mathematics</div>
+            <div class="teacher-socials">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Languages -->
+        <div class="teacher-card reveal" data-department="languages">
+          <div class="teacher-img" style="background: linear-gradient(135deg, #fce4ec, #f48fb1);">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=300&h=250&fit=crop&crop=faces" alt="Ms. Anjali Desai" style="width:100%;height:100%;object-fit:cover;">
+            <div class="teacher-bio">
+              <p>M.A. in English Literature from Delhi University. 15 years of experience. Award-winning author and debate coach.</p>
+            </div>
+          </div>
+          <div class="teacher-info">
+            <h3>Ms. Anjali Desai</h3>
+            <div class="subject">Head of English</div>
+            <div class="teacher-socials">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="teacher-card reveal" data-department="languages">
+          <div class="teacher-img" style="background: linear-gradient(135deg, #ede7f6, #b39ddb);">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=250&fit=crop&crop=faces" alt="Dr. Mohan Sharma" style="width:100%;height:100%;object-fit:cover;">
+            <div class="teacher-bio">
+              <p>M.A. in Hindi, Ph.D. in Hindi Literature. 14 years of experience. Promotes Hindi creative writing among students.</p>
+            </div>
+          </div>
+          <div class="teacher-info">
+            <h3>Dr. Mohan Sharma</h3>
+            <div class="subject">Hindi</div>
+            <div class="teacher-socials">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Arts & Sports -->
+        <div class="teacher-card reveal" data-department="arts">
+          <div class="teacher-img" style="background: linear-gradient(135deg, #fff8e1, #ffe082);">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=250&fit=crop&crop=faces" alt="Mrs. Meera Patel" style="width:100%;height:100%;object-fit:cover;">
+            <div class="teacher-bio">
+              <p>B.F.A. from Sir J.J. School of Art. 10 years of experience. Students have won national-level art competitions under her mentorship.</p>
+            </div>
+          </div>
+          <div class="teacher-info">
+            <h3>Mrs. Meera Patel</h3>
+            <div class="subject">Visual Arts</div>
+            <div class="teacher-socials">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="teacher-card reveal" data-department="arts">
+          <div class="teacher-img" style="background: linear-gradient(135deg, #e8f5e9, #81c784);">
+            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=250&fit=crop&crop=faces" alt="Mr. Vikram Singh" style="width:100%;height:100%;object-fit:cover;">
+            <div class="teacher-bio">
+              <p>Former national-level athlete. B.P.Ed. with 16 years of coaching experience. Led school teams to multiple state championships.</p>
+            </div>
+          </div>
+          <div class="teacher-info">
+            <h3>Mr. Vikram Singh</h3>
+            <div class="subject">Physical Education</div>
+            <div class="teacher-socials">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="teacher-card reveal" data-department="science">
+          <div class="teacher-img" style="background: linear-gradient(135deg, #e3f2fd, #90caf9);">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&h=250&fit=crop&crop=faces" alt="Mr. Arjun Khanna" style="width:100%;height:100%;object-fit:cover;">
+            <div class="teacher-bio">
+              <p>M.Tech in Computer Science. 9 years of experience. Leads the school's robotics and coding club programs.</p>
+            </div>
+          </div>
+          <div class="teacher-info">
+            <h3>Mr. Arjun Khanna</h3>
+            <div class="subject">Computer Science</div>
+            <div class="teacher-socials">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="teacher-card reveal" data-department="languages">
+          <div class="teacher-img" style="background: linear-gradient(135deg, #fbe9e7, #ffab91);">
+            <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=300&h=250&fit=crop&crop=faces" alt="Ms. Nisha Kapoor" style="width:100%;height:100%;object-fit:cover;">
+            <div class="teacher-bio">
+              <p>M.A. in French from Alliance Fran&#231;aise. 7 years of experience. Organizes French cultural exchange programs.</p>
+            </div>
+          </div>
+          <div class="teacher-info">
+            <h3>Ms. Nisha Kapoor</h3>
+            <div class="subject">French</div>
+            <div class="teacher-socials">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="teacher-card reveal" data-department="math">
+          <div class="teacher-img" style="background: linear-gradient(135deg, #e0f7fa, #80deea);">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&h=250&fit=crop&crop=faces" alt="Ms. Ritu Joshi" style="width:100%;height:100%;object-fit:cover;">
+            <div class="teacher-bio">
+              <p>M.Sc. in Mathematics. 6 years of experience. Specializes in making mathematics fun through puzzles and real-world applications.</p>
+            </div>
+          </div>
+          <div class="teacher-info">
+            <h3>Ms. Ritu Joshi</h3>
+            <div class="subject">Mathematics</div>
+            <div class="teacher-socials">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -185,9 +349,7 @@
     <div class="container">
       <div class="about-preview">
         <div class="about-img reveal-left">
-          <div class="about-img-placeholder">
-            <i class="fas fa-school"></i>
-          </div>
+          <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&h=400&fit=crop" alt="Modern School Campus" style="width:100%;height:400px;object-fit:cover;border-radius:16px;">
         </div>
         <div class="about-text reveal-right">
           <h2>Welcome to Modern School</h2>
@@ -249,8 +411,8 @@
       <div class="events-carousel">
         <div class="events-track">
           <div class="event-card">
-            <div class="event-img">
-              <i class="fas fa-microscope"></i>
+            <div class="event-img" style="background:none;">
+              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=200&fit=crop" alt="Science Fair" style="width:100%;height:100%;object-fit:cover;">
               <div class="event-date-badge">
                 <span class="day">15</span>
                 <span class="month">Apr</span>
@@ -265,8 +427,8 @@
             </div>
           </div>
           <div class="event-card">
-            <div class="event-img" style="background: linear-gradient(135deg, #ff6f00, #ff8f00);">
-              <i class="fas fa-running"></i>
+            <div class="event-img" style="background:none;">
+              <img src="https://images.unsplash.com/photo-1461896836934-bd45ba6343f2?w=400&h=200&fit=crop" alt="Sports Meet" style="width:100%;height:100%;object-fit:cover;">
               <div class="event-date-badge" style="background: var(--primary);">
                 <span class="day">22</span>
                 <span class="month">Apr</span>
@@ -281,8 +443,8 @@
             </div>
           </div>
           <div class="event-card">
-            <div class="event-img" style="background: linear-gradient(135deg, #7b1fa2, #9c27b0);">
-              <i class="fas fa-music"></i>
+            <div class="event-img" style="background:none;">
+              <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=400&h=200&fit=crop" alt="Cultural Festival" style="width:100%;height:100%;object-fit:cover;">
               <div class="event-date-badge">
                 <span class="day">05</span>
                 <span class="month">May</span>
@@ -297,8 +459,8 @@
             </div>
           </div>
           <div class="event-card">
-            <div class="event-img" style="background: linear-gradient(135deg, #2e7d32, #43a047);">
-              <i class="fas fa-tree"></i>
+            <div class="event-img" style="background:none;">
+              <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=200&fit=crop" alt="Environment Day" style="width:100%;height:100%;object-fit:cover;">
               <div class="event-date-badge">
                 <span class="day">12</span>
                 <span class="month">May</span>
@@ -313,8 +475,8 @@
             </div>
           </div>
           <div class="event-card">
-            <div class="event-img" style="background: linear-gradient(135deg, #c62828, #e53935);">
-              <i class="fas fa-graduation-cap"></i>
+            <div class="event-img" style="background:none;">
+              <img src="https://images.unsplash.com/photo-1523050854058-8df90110c8f1?w=400&h=200&fit=crop" alt="Graduation" style="width:100%;height:100%;object-fit:cover;">
               <div class="event-date-badge">
                 <span class="day">20</span>
                 <span class="month">May</span>

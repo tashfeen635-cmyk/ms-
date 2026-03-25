@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(powershell:*)",
-      "Bash(\"/c/Users/hp/OneDrive/Desktop/MS/add_preloader.ps1\" << 'SCRIPT'\n$files = @\\(\"about.html\", \"academics.html\", \"admissions.html\", \"events.html\", \"gallery.html\", \"teachers.html\", \"contact.html\"\\)\n$basePath = \"C:\\\\Users\\\\hp\\\\OneDrive\\\\Desktop\\\\MS\"\n$replacement = @\"\n<body class=\"loading\">\n\n  <!-- PRELOADER -->\n  <div class=\"preloader\">\n    <div class=\"preloader-spinner\"></div>\n    <div class=\"preloader-text\">Modern School</div>\n  </div>\n\"@\n\nforeach \\($file in $files\\) {\n    $path = Join-Path $basePath $file\n    if \\(Test-Path $path\\) {\n        $content = Get-Content $path -Raw\n        $content = $content.Replace\\('<body>', $replacement\\)\n        Set-Content $path $content -NoNewline\n        Write-Host \"Updated: $file\"\n    } else {\n        Write-Host \"Not found: $file\"\n    }\n}\nSCRIPT)"
+      "Bash(\"/c/Users/hp/OneDrive/Desktop/MS/add_preloader.ps1\" << 'SCRIPT'\n$files = @\\(\"about.html\", \"academics.html\", \"admissions.html\", \"events.html\", \"gallery.html\", \"teachers.html\", \"contact.html\"\\)\n$basePath = \"C:\\\\Users\\\\hp\\\\OneDrive\\\\Desktop\\\\MS\"\n$replacement = @\"\n<body class=\"loading\">\n\n  <!-- PRELOADER -->\n  <div class=\"preloader\">\n    <div class=\"preloader-spinner\"></div>\n    <div class=\"preloader-text\">Modern School</div>\n  </div>\n\"@\n\nforeach \\($file in $files\\) {\n    $path = Join-Path $basePath $file\n    if \\(Test-Path $path\\) {\n        $content = Get-Content $path -Raw\n        $content = $content.Replace\\('<body>', $replacement\\)\n        Set-Content $path $content -NoNewline\n        Write-Host \"Updated: $file\"\n    } else {\n        Write-Host \"Not found: $file\"\n    }\n}\nSCRIPT)",
+      "Bash(del \"C:\\\\Users\\\\hp\\\\OneDrive\\\\Desktop\\\\MS\\\\replace-images.ps1\")"
     ]
   }
 }
