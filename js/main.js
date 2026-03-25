@@ -1,5 +1,5 @@
 /* ============================================
-   Modern School Website - Main JavaScript
+   MS Bloomrise Website - Main JavaScript
    ENHANCED: Particles, Typing, Tilt, Parallax
    ============================================ */
 
