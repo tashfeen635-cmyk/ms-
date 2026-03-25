@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — Modern School</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="loading">
+
+  <!-- PRELOADER -->
+  <div class="preloader">
+    <div class="preloader-spinner"></div>
+    <div class="preloader-text">Modern School</div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <i class="fas fa-graduation-cap"></i>
+        Modern<span>School</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="academics.html">Academics</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="events.html">Events</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="teachers.html">Faculty</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-right">
+        <button class="theme-toggle" aria-label="Toggle dark mode">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-overlay"></div>
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="academics.html">Academics</a>
+    <a href="admissions.html">Admissions</a>
+    <a href="events.html">Events</a>
+    <a href="gallery.html" class="active">Gallery</a>
+    <a href="teachers.html">Faculty</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Photo Gallery</h1>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Gallery</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Our Gallery</h2>
+        <p>Explore moments captured across our vibrant campus life.</p>
+      </div>
+      <div class="events-filter gallery-filter reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="campus">Campus</button>
+        <button class="filter-btn" data-filter="events">Events</button>
+        <button class="filter-btn" data-filter="sports">Sports</button>
+        <button class="filter-btn" data-filter="classroom">Classroom</button>
+      </div>
+      <div class="gallery-grid">
+        <!-- Campus -->
+        <div class="gallery-item reveal" data-category="campus" data-caption="School Main Building">
+          <div class="gallery-placeholder"><i class="fas fa-school"></i></div>
+          <div class="gallery-overlay">
+            <h4>Main Building</h4>
+            <span>Campus</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="campus" data-caption="School Library">
+          <div class="gallery-placeholder" style="background: linear-gradient(135deg, #e8f5e9, #c8e6c9);"><i class="fas fa-book" style="color: #2e7d32;"></i></div>
+          <div class="gallery-overlay">
+            <h4>Library</h4>
+            <span>Campus</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="campus" data-caption="Computer Lab">
+          <div class="gallery-placeholder" style="background: linear-gradient(135deg, #e3f2fd, #bbdefb);"><i class="fas fa-desktop" style="color: #1565c0;"></i></div>
+          <div class="gallery-overlay">
+            <h4>Computer Lab</h4>
+            <span>Campus</span>
+          </div>
+        </div>
+
+        <!-- Events -->
+        <div class="gallery-item reveal" data-category="events" data-caption="Annual Day Celebration">
+          <div class="gallery-placeholder" style="background: linear-gradient(135deg, #fce4ec, #f8bbd0);"><i class="fas fa-star" style="color: #c62828;"></i></div>
+          <div class="gallery-overlay">
+            <h4>Annual Day</h4>
+            <span>Events</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="events" data-caption="Science Exhibition">
+          <div class="gallery-placeholder" style="background: linear-gradient(135deg, #e0f2f1, #b2dfdb);"><i class="fas fa-flask" style="color: #00695c;"></i></div>
+          <div class="gallery-overlay">
+            <h4>Science Exhibition</h4>
+            <span>Events</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="events" data-caption="Cultural Festival">
+          <div class="gallery-placeholder" style="background: linear-gradient(135deg, #ede7f6, #d1c4e9);"><i class="fas fa-music" style="color: #7b1fa2;"></i></div>
+          <div class="gallery-overlay">
+            <h4>Cultural Festival</h4>
+            <span>Events</span>
+          </div>
+        </div>
+
+        <!-- Sports -->
+        <div class="gallery-item reveal" data-category="sports" data-caption="Football Tournament">
+          <div class="gallery-placeholder" style="background: linear-gradient(135deg, #fff3e0, #ffe0b2);"><i class="fas fa-futbol" style="color: #e65100;"></i></div>
+          <div class="gallery-overlay">
+            <h4>Football</h4>
+            <span>Sports</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="sports" data-caption="Swimming Competition">
+          <div class="gallery-placeholder" style="background: linear-gradient(135deg, #e3f2fd, #90caf9);"><i class="fas fa-swimmer" style="color: #1565c0;"></i></div>
+          <div class="gallery-overlay">
+            <h4>Swimming</h4>
+            <span>Sports</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="sports" data-caption="Basketball Championship">
+          <div class="gallery-placeholder" style="background: linear-gradient(135deg, #fff8e1, #ffecb3);"><i class="fas fa-basketball-ball" style="color: #ff6f00;"></i></div>
+          <div class="gallery-overlay">
+            <h4>Basketball</h4>
+            <span>Sports</span>
+          </div>
+        </div>
+
+        <!-- Classroom -->
+        <div class="gallery-item reveal" data-category="classroom" data-caption="Interactive Classroom Session">
+          <div class="gallery-placeholder" style="background: linear-gradient(135deg, #f3e5f5, #e1bee7);"><i class="fas fa-chalkboard-teacher" style="color: #7b1fa2;"></i></div>
+          <div class="gallery-overlay">
+            <h4>Classroom Learning</h4>
+            <span>Classroom</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="classroom" data-caption="Science Lab Experiment">
+          <div class="gallery-placeholder" style="background: linear-gradient(135deg, #e8eaf6, #c5cae9);"><i class="fas fa-microscope" style="color: #283593;"></i></div>
+          <div class="gallery-overlay">
+            <h4>Science Lab</h4>
+            <span>Classroom</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="classroom" data-caption="Art Class">
+          <div class="gallery-placeholder" style="background: linear-gradient(135deg, #fbe9e7, #ffccbc);"><i class="fas fa-palette" style="color: #bf360c;"></i></div>
+          <div class="gallery-overlay">
+            <h4>Art Class</h4>
+            <span>Classroom</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox">
+    <button class="lightbox-close"><i class="fas fa-times"></i></button>
+    <button class="lightbox-nav lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+    <button class="lightbox-nav lightbox-next"><i class="fas fa-chevron-right"></i></button>
+    <div class="lightbox-content">
+      <div class="gallery-placeholder" style="width:600px;height:400px;max-width:80vw;max-height:60vh;border-radius:12px;font-size:5rem;">
+        <i class="fas fa-image"></i>
+      </div>
+      <div class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <h3><i class="fas fa-graduation-cap"></i> Modern School</h3>
+          <p>Dedicated to academic excellence and holistic development since 1990. We shape tomorrow's leaders with knowledge, values, and innovation.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="academics.html"><i class="fas fa-chevron-right"></i> Academics</a></li>
+            <li><a href="admissions.html"><i class="fas fa-chevron-right"></i> Admissions</a></li>
+            <li><a href="events.html"><i class="fas fa-chevron-right"></i> Events</a></li>
+            <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+            <li><a href="teachers.html"><i class="fas fa-chevron-right"></i> Faculty</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Contact Info</h3>
+          <ul class="footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i> 123 Education Lane, Knowledge City, State 110001</li>
+            <li><i class="fas fa-phone"></i> +91 11 2345 6789</li>
+            <li><i class="fas fa-envelope"></i> info@modernschool.edu</li>
+            <li><i class="fas fa-clock"></i> Mon - Fri: 8:00 AM - 4:00 PM</li>
+          </ul>
+        </div>
+        <div class="footer-col footer-newsletter">
+          <h3>Newsletter</h3>
+          <p>Subscribe to get latest news and updates from Modern School.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+            <input type="email" placeholder="Your email" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Modern School. All Rights Reserved. | Designed with <i class="fas fa-heart" style="color: #e74c3c;"></i></p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faculty — Modern School</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="loading">
+
+  <!-- PRELOADER -->
+  <div class="preloader">
+    <div class="preloader-spinner"></div>
+    <div class="preloader-text">Modern School</div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <i class="fas fa-graduation-cap"></i>
+        Modern<span>School</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="academics.html">Academics</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="events.html">Events</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="teachers.html" class="active">Faculty</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-right">
+        <button class="theme-toggle" aria-label="Toggle dark mode">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-overlay"></div>
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="academics.html">Academics</a>
+    <a href="admissions.html">Admissions</a>
+    <a href="events.html">Events</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="teachers.html" class="active">Faculty</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Our Faculty</h1>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Faculty</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FACULTY -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Meet Our Teachers</h2>
+        <p>Our dedicated and experienced faculty members are the backbone of Modern School.</p>
+      </div>
+      <div class="events-filter teachers-filter reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="science">Science</button>
+        <button class="filter-btn" data-filter="math">Mathematics</button>
+        <button class="filter-btn" data-filter="languages">Languages</button>
+        <button class="filter-btn" data-filter="arts">Arts & Sports</button>
+      </div>
+      <div class="teachers-grid">
+        <!-- Science -->
+        <div class="teacher-card reveal" data-department="science">
+          <div class="teacher-img">
+            <i class="fas fa-user-tie"></i>
+            <div class="teacher-bio">
+              <p>Ph.D. in Physics from IIT Delhi. 18 years of teaching experience. Specializes in making complex concepts simple and engaging.</p>
+            </div>
+          </div>
+          <div class="teacher-info">
+            <h3>Dr. Rajesh Verma</h3>
+            <div class="subject">Head of Physics</div>
+            <div class="teacher-socials">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="teacher-card reveal" data-department="science">
+          <div class="teacher-img" style="background: linear-gradient(135deg, #e8f5e9, #a5d6a7);">
+            <i class="fas fa-user" style="color: #2e7d32;"></i>
+            <div class="teacher-bio">
+              <p>M.Sc. in Chemistry with 12 years of experience. Known for innovative lab experiments and mentoring students for Olympiads.</p>
+            </div>
+          </div>
+          <div class="teacher-info">
+            <h3>Mrs. Sunita Gupta</h3>
+            <div class="subject">Chemistry</div>
+            <div class="teacher-socials">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="teacher-card reveal" data-department="science">
+          <div class="teacher-img" style="background: linear-gradient(135deg, #e0f2f1, #80cbc4);">
+            <i class="fas fa-user" style="color: #00695c;"></i>
+            <div class="teacher-bio">
+              <p>M.Sc. in Biology with specialization in Biotechnology. 10 years of experience. Passionate about environmental education.</p>
+            </div>
+          </div>
+          <div class="teacher-info">
+            <h3>Ms. Priya Nair</h3>
+            <div class="subject">Biology</div>
+            <div class="teacher-socials">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mathematics -->
+        <div class="teacher-card reveal" data-department="math">
+          <div class="teacher-img" style="background: linear-gradient(135deg, #fff3e0, #ffcc80);">
+            <i class="fas fa-user-tie" style="color: #e65100;"></i>
+            <div class="teacher-bio">
+              <p>M.Sc. in Mathematics from JNU. 20 years of experience. Multiple students have scored perfect marks in board exams under his guidance.</p>
+            </div>
+          </div>
+          <div class="teacher-info">
+            <h3>Mr. Anil Mathur</h3>
+            <div class="subject">Head of Mathematics</div>
+            <div class="teacher-socials">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="teacher-card reveal" data-department="math">
+          <div class="teacher-img" style="background: linear-gradient(135deg, #e8eaf6, #9fa8da);">
+            <i class="fas fa-user" style="color: #283593;"></i>
+            <div class="teacher-bio">
+              <p>B.Ed., M.Sc. Statistics. 8 years of experience with a focus on applied mathematics and competitive exam preparation.</p>
+            </div>
+          </div>
+          <div class="teacher-info">
+            <h3>Mrs. Kavita Reddy</h3>
+            <div class="subject">Mathematics</div>
+            <div class="teacher-socials">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Languages -->
+        <div class="teacher-card reveal" data-department="languages">
+          <div class="teacher-img" style="background: linear-gradient(135deg, #fce4ec, #f48fb1);">
+            <i class="fas fa-user" style="color: #c62828;"></i>
+            <div class="teacher-bio">
+              <p>M.A. in English Literature from Delhi University. 15 years of experience. Award-winning author and debate coach.</p>
+            </div>
+          </div>
+          <div class="teacher-info">
+            <h3>Ms. Anjali Desai</h3>
+            <div class="subject">Head of English</div>
+            <div class="teacher-socials">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="teacher-card reveal" data-department="languages">
+          <div class="teacher-img" style="background: linear-gradient(135deg, #ede7f6, #b39ddb);">
+            <i class="fas fa-user-tie" style="color: #4527a0;"></i>
+            <div class="teacher-bio">
+              <p>M.A. in Hindi, Ph.D. in Hindi Literature. 14 years of experience. Promotes Hindi creative writing among students.</p>
+            </div>
+          </div>
+          <div class="teacher-info">
+            <h3>Dr. Mohan Sharma</h3>
+            <div class="subject">Hindi</div>
+            <div class="teacher-socials">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Arts & Sports -->
+        <div class="teacher-card reveal" data-department="arts">
+          <div class="teacher-img" style="background: linear-gradient(135deg, #fff8e1, #ffe082);">
+            <i class="fas fa-user" style="color: #f57f17;"></i>
+            <div class="teacher-bio">
+              <p>B.F.A. from Sir J.J. School of Art. 10 years of experience. Students have won national-level art competitions under her mentorship.</p>
+            </div>
+          </div>
+          <div class="teacher-info">
+            <h3>Mrs. Meera Patel</h3>
+            <div class="subject">Visual Arts</div>
+            <div class="teacher-socials">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="teacher-card reveal" data-department="arts">
+          <div class="teacher-img" style="background: linear-gradient(135deg, #e8f5e9, #81c784);">
+            <i class="fas fa-user-tie" style="color: #1b5e20;"></i>
+            <div class="teacher-bio">
+              <p>Former national-level athlete. B.P.Ed. with 16 years of coaching experience. Led school teams to multiple state championships.</p>
+            </div>
+          </div>
+          <div class="teacher-info">
+            <h3>Mr. Vikram Singh</h3>
+            <div class="subject">Physical Education</div>
+            <div class="teacher-socials">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="teacher-card reveal" data-department="science">
+          <div class="teacher-img" style="background: linear-gradient(135deg, #e3f2fd, #90caf9);">
+            <i class="fas fa-user-tie" style="color: #0d47a1;"></i>
+            <div class="teacher-bio">
+              <p>M.Tech in Computer Science. 9 years of experience. Leads the school's robotics and coding club programs.</p>
+            </div>
+          </div>
+          <div class="teacher-info">
+            <h3>Mr. Arjun Khanna</h3>
+            <div class="subject">Computer Science</div>
+            <div class="teacher-socials">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="teacher-card reveal" data-department="languages">
+          <div class="teacher-img" style="background: linear-gradient(135deg, #fbe9e7, #ffab91);">
+            <i class="fas fa-user" style="color: #bf360c;"></i>
+            <div class="teacher-bio">
+              <p>M.A. in French from Alliance Fran&#231;aise. 7 years of experience. Organizes French cultural exchange programs.</p>
+            </div>
+          </div>
+          <div class="teacher-info">
+            <h3>Ms. Nisha Kapoor</h3>
+            <div class="subject">French</div>
+            <div class="teacher-socials">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="teacher-card reveal" data-department="math">
+          <div class="teacher-img" style="background: linear-gradient(135deg, #e0f7fa, #80deea);">
+            <i class="fas fa-user" style="color: #006064;"></i>
+            <div class="teacher-bio">
+              <p>M.Sc. in Mathematics. 6 years of experience. Specializes in making mathematics fun through puzzles and real-world applications.</p>
+            </div>
+          </div>
+          <div class="teacher-info">
+            <h3>Ms. Ritu Joshi</h3>
+            <div class="subject">Mathematics</div>
+            <div class="teacher-socials">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <h3><i class="fas fa-graduation-cap"></i> Modern School</h3>
+          <p>Dedicated to academic excellence and holistic development since 1990. We shape tomorrow's leaders with knowledge, values, and innovation.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="academics.html"><i class="fas fa-chevron-right"></i> Academics</a></li>
+            <li><a href="admissions.html"><i class="fas fa-chevron-right"></i> Admissions</a></li>
+            <li><a href="events.html"><i class="fas fa-chevron-right"></i> Events</a></li>
+            <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+            <li><a href="teachers.html"><i class="fas fa-chevron-right"></i> Faculty</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Contact Info</h3>
+          <ul class="footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i> 123 Education Lane, Knowledge City, State 110001</li>
+            <li><i class="fas fa-phone"></i> +91 11 2345 6789</li>
+            <li><i class="fas fa-envelope"></i> info@modernschool.edu</li>
+            <li><i class="fas fa-clock"></i> Mon - Fri: 8:00 AM - 4:00 PM</li>
+          </ul>
+        </div>
+        <div class="footer-col footer-newsletter">
+          <h3>Newsletter</h3>
+          <p>Subscribe to get latest news and updates from Modern School.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+            <input type="email" placeholder="Your email" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Modern School. All Rights Reserved. | Designed with <i class="fas fa-heart" style="color: #e74c3c;"></i></p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
